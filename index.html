@@ -4,70 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Surya Raghavarapu</title>
-  <meta name="description" content="Surya Raghavarapu — Master's at Rutgers University, Associate at Goldman Sachs. I build and ship things on the web." />
+  <meta name="description" content="Surya Raghavarapu — Associate at Goldman Sachs, Master's from Rutgers University. I build and ship things on the web." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="backdrop" aria-hidden="true">
-    <span class="blob b1"></span>
-    <span class="blob b2"></span>
-    <span class="blob b3"></span>
-    <span class="blob b4"></span>
-    <span class="bloom"></span>
-  </div>
-  <div class="grain" aria-hidden="true"></div>
+  <div class="page">
 
-  <nav class="nav">
-    <a href="index.html" class="nav-brand">Surya</a>
-    <div class="nav-links">
-      <a href="index.html" class="active">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="games.html">Games</a>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <p class="kicker">Hi, I'm</p>
-    <h1>Surya<br />Raghavarapu</h1>
-    <p class="sub">I build and ship things on the web — fast.</p>
-    <div class="hero-meta">
-      <a class="pill pill-link" href="https://github.com/sai-surya-siva-prasad" target="_blank" rel="noopener">GitHub</a>
-      <a class="pill pill-accent" href="projects.html">See what I'm building →</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-marker" aria-hidden="true"></span>
-        <div>
-          <h2>Associate · Goldman Sachs</h2>
-          <p>Working at the intersection of finance and technology.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-marker" aria-hidden="true"></span>
-        <div>
-          <h2>Master's · Rutgers University</h2>
-          <p>Graduate studies building the foundation for everything I ship.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="now">
-      <h2 class="section-title">Right now</h2>
-      <p>
-        I'm on a <a href="https://sai-surya-siva-prasad.github.io/7-days-7-projects/" target="_blank" rel="noopener">7-day build challenge</a> —
-        one project, shipped live, every single day. Consistency beats intensity.
+    <header class="intro">
+      <div class="avatar" aria-hidden="true">SR</div>
+      <h1>Surya Raghavarapu</h1>
+      <p class="bio">
+        I build and ship things on the web — fast. Associate at Goldman Sachs,
+        Master's from Rutgers. Currently shipping one project every day for seven days.
       </p>
-    </section>
-  </main>
+    </header>
 
-  <footer>
-    <p>Surya Raghavarapu · <a href="https://github.com/sai-surya-siva-prasad" target="_blank" rel="noopener">GitHub</a></p>
-  </footer>
+    <hr class="rule" />
+
+    <a class="banner" href="https://sai-surya-siva-prasad.github.io/7-days-7-projects/" target="_blank" rel="noopener">
+      <span class="banner-tag">▶ Live</span>
+      <span class="banner-text">7 Days · 7 Projects — one project shipped every day</span>
+      <span class="banner-cta">Follow →</span>
+    </a>
+
+    <section class="row">
+      <h2 class="row-label">Experience</h2>
+      <div class="row-body">
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#4a76c9">G</span>
+            <a href="https://www.goldmansachs.com" target="_blank" rel="noopener" class="entry-name">Goldman Sachs</a>
+            <span class="entry-date">Associate</span>
+          </div>
+          <p>Working at the intersection of finance and technology.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="row-label">Education</h2>
+      <div class="row-body">
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#cc0033">R</span>
+            <span class="entry-name">Rutgers University</span>
+            <span class="entry-date">Master's</span>
+          </div>
+          <p>Graduate studies building the foundation for everything I ship.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="row-label">Projects</h2>
+      <div class="row-body">
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#c98a2d">P</span>
+            <a href="https://sai-surya-siva-prasad.github.io/" class="entry-name">Personal Portfolio</a>
+            <span class="entry-date">Day 1 · shipped</span>
+          </div>
+          <p>This site. Home base for the 7-day challenge — plain HTML and CSS, no framework, deployed on GitHub Pages.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#5ba05b">S</span>
+            <span class="entry-name">Streak Tracker</span>
+            <span class="entry-date">Day 2 · soon</span>
+          </div>
+          <p>A habit tracker with a GitHub-style contribution grid.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#8a6bbf">F</span>
+            <span class="entry-name">Should I Deploy on Friday?</span>
+            <span class="entry-date">Day 3 · soon</span>
+          </div>
+          <p>A single-purpose joke site with strong opinions about Fridays.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#4da3c7">W</span>
+            <span class="entry-name">Weather Outfit Picker</span>
+            <span class="entry-date">Day 4 · soon</span>
+          </div>
+          <p>Live weather in, outfit advice with personality out.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#d88a3f">I</span>
+            <span class="entry-name">Public Idea Wall</span>
+            <span class="entry-date">Day 5 · soon</span>
+          </div>
+          <p>Post an idea, upvote others. Shared state, real backend.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#1db954">R</span>
+            <span class="entry-name">Roast My Spotify</span>
+            <span class="entry-date">Day 6 · soon</span>
+          </div>
+          <p>Your top artists, lovingly roasted. Redemption playlist included.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#666f7d">✓</span>
+            <span class="entry-name">Challenge Recap</span>
+            <span class="entry-date">Day 7 · soon</span>
+          </div>
+          <p>Every project, every lesson, one polished finale page.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="row-label">Games</h2>
+      <div class="row-body">
+        <article class="entry">
+          <div class="entry-head">
+            <span class="entry-icon" style="background:#c9584a">✈</span>
+            <a href="https://github.com/sai-surya-siva-prasad/airplance-game" target="_blank" rel="noopener" class="entry-name">Airplane Game</a>
+            <span class="entry-date">2026</span>
+          </div>
+          <p>A browser arcade game — dodge, shoot, survive. Vanilla JavaScript and canvas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="row-label">Contact</h2>
+      <div class="row-body">
+        <p class="contact-links">
+          <a href="https://github.com/sai-surya-siva-prasad" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+  </div>
 </body>
 </html>
