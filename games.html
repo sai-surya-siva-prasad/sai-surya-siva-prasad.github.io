@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games — Surya Raghavarapu</title>
+  <meta name="description" content="Browser games built by Surya Raghavarapu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">Surya</a>
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="games.html" class="active">Games</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <h1>Games</h1>
+    <p class="sub">Browser games, built from scratch. More on the way.</p>
+  </header>
+
+  <main>
+    <div class="ship-grid">
+      <article class="ship-card" data-status="shipped">
+        <span class="ship-day">Game 01</span>
+        <h3>Airplane Game</h3>
+        <p>A browser arcade game — dodge, shoot, survive. Vanilla JavaScript and canvas.</p>
+        <a class="ship-status" href="https://github.com/sai-surya-siva-prasad/airplance-game" target="_blank" rel="noopener">Code →</a>
+      </article>
+
+      <article class="ship-card" data-status="upcoming">
+        <span class="ship-day">Game 02</span>
+        <h3>Coming Soon</h3>
+        <p>The next game is on the drawing board.</p>
+        <span class="ship-status">Soon</span>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>Surya Raghavarapu · <a href="https://github.com/sai-surya-siva-prasad" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+</body>
+</html>
