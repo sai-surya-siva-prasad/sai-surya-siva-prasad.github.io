@@ -1,0 +1,271 @@
+/* Portfolio — same matte, grainy language as the challenge page. */
+
+:root {
+  --bg: #edeae3;
+  --ink: #2b2925;
+  --ink-soft: #5c574e;
+  --card: #e3dfd6;
+  --card-edge: #d3cec2;
+  --accent: #b4552d;
+  --accent-soft: #c97a55;
+  --pill-bg: #dcd7cb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.grain {
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 100px 24px 80px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: clamp(3rem, 9vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin-top: 24px;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  max-width: 520px;
+}
+
+.hero-meta {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: var(--pill-bg);
+  border: 1px solid var(--card-edge);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.pill:hover {
+  transform: translateY(-1px);
+}
+
+.pill-link {
+  color: var(--accent);
+}
+
+.pill-link:hover {
+  background: var(--card-edge);
+}
+
+.pill-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #f4f1ea;
+  font-weight: 600;
+}
+
+.pill-accent:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+}
+
+/* ---------- Sections ---------- */
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.section-head {
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.section-sub {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+/* ---------- Challenge grid ---------- */
+
+.ship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.ship-card {
+  background: var(--card);
+  border: 1px solid var(--card-edge);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.18s ease;
+}
+
+.ship-card:hover {
+  transform: translateY(-3px);
+}
+
+.ship-card[data-status="shipped"] {
+  border: 1.5px solid var(--accent-soft);
+}
+
+.ship-day {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.ship-card h3 {
+  font-family: "Fraunces", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.ship-card p {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  flex-grow: 1;
+}
+
+.ship-status {
+  align-self: flex-start;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--pill-bg);
+  border: 1px solid var(--card-edge);
+  padding: 4px 11px;
+  border-radius: 999px;
+}
+
+.ship-card[data-status="shipped"] .ship-status {
+  color: #f4f1ea;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---------- Projects ---------- */
+
+.project-row {
+  background: var(--card);
+  border: 1px solid var(--card-edge);
+  border-radius: 14px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-row h3 {
+  font-family: "Fraunces", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.project-row p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  max-width: 520px;
+}
+
+/* ---------- About + footer ---------- */
+
+.about p {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  max-width: 640px;
+}
+
+footer {
+  border-top: 1px solid var(--card-edge);
+  padding: 36px 24px 48px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent);
+}
+
+.foot-note {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 64px;
+  }
+}
